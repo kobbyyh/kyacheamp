@@ -1,0 +1,372 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900 */
+
+#heroname {
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  color: #f39c12;
+  /* font-weight: 900; */
+  /* font-style: normal; */
+}
+body {
+    background: linear-gradient(45deg, #1c1c1c, #333);
+    /* background-color: var(--background-color); */
+    /* color: var(--text-color); */
+    color: wheat;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Default Light Theme */
+:root {
+    --background-color: #ffe4c4;
+    --text-color: #000000;
+
+}
+
+/* Dark Theme Variables */
+.dark-theme {
+    --background-color: #121212;
+    --text-color: #ffe4c4;
+}
+
+.theme-toggle {
+    /* position: fixed;
+    top: 1rem;
+    right: 1rem; */
+    /* font-size: 2rem; */
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/* ---------------------- */
+
+
+body {
+    /* overflow: hidden; */
+    margin: 0;
+}
+
+/* #main-content {
+    display: none;
+} */
+
+.video-background video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section {
+    height: 100vh;
+    
+    /* background: linear-gradient(45deg, #1c1c1c, #333); */
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Make sure the section covers the full viewport */
+}
+
+/* body {
+    font-family: "Poppins", sans-serif;
+}
+#hidden-content {
+    display: none;
+}
+.hero-section {
+    height: 100vh;
+    background: url("../images/hero-bg.jpg") no-repeat center center/cover;
+} */
+
+section {
+    padding: 60px 0;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.video-background {
+    position: relative;
+    height: 100vh;
+    /* Full viewport height */
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Video element styles */
+.video-background video {
+    /* background-color: black; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure video covers the entire area */
+    z-index: -1;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+   
+}
+
+.overlay-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    
+}
+
+.overlay-content p {
+    font-size: 1.2rem;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #7a94af;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skill-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+/* START----------------- */
+
+.skillscard {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: visible; /* Allows the image to overlap the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skillscard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.overlapping-img {
+    width: 50%;
+    position: absolute;
+    top: -70px; /* Adjust this to control overlap */
+    left: 50%;
+    transform: translateX(-50%);
+    /* border-radius: 50%; */
+    /* border: 3px solid #fff; */
+    /* background-color: #f9f9f9; */
+    z-index: 1;
+}
+
+.card-body {
+    color: white;
+    border-radius: 8px;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);    
+    padding-top: 50px; /* Creates space for the overlapping image */
+}
+
+.card-title {
+    padding-top: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.skills_section {
+    padding: 10%;
+    margin: 0%;
+    border: 100%;
+}
+/* .skillscard {
+    font-family: monospace;
+    align-items: center;
+    color: white;
+     background: linear-gradient(120deg, #0f2027, #203a43, #2c5364); 
+}
+
+.skills_section {
+    padding: 10%;
+    margin: 0%;
+    border: 100%;
+} */
+/* END---------------------- */
+
+
+
+
+.skill-name {
+    cursor: pointer;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    /* font-weight: 600; */
+    color: #333;
+    margin-left: 15px;
+}
+
+#reveal-button {
+    width: 80px;
+    height: 80px;
+    font-size: 3rem;
+    border-radius: 50%;
+    background-color: transparent;
+    display: inline-block;
+    color: #ffe4c4;
+    cursor: pointer;
+    animation: smoothBounce 0.5s ease-in-out infinite alternate;
+}
+
+/* Smooth bounce effect */
+@keyframes smoothBounce {
+    from {
+        transform: translateY(0);
+        /* Start at the normal position */
+    }
+
+    to {
+        transform: translateY(20px);
+        /* Move 20px downward */
+    }
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px;
+    text-align: center;  
+    /* flex-wrap: wrap; */
+    /* background-color: #999; */
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.project-card {
+    background-color: linear-gradient(top red,bottom yellow);
+    /* background-color: blue; */
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.project-card:hover{
+    background-color: red;
+}
+
+.project-card img:hover {    
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.project-card a{
+    text-decoration: none;
+    color: white;
+}
+.project-card a:hover{
+    text-decoration: none;
+    color: rgb(10, 184, 232);
+}
+.project-card h3{
+   padding-top: 50px;
+    
+}
+
+
+.projects {
+    padding: 10%;
+    font-family: verdana;
+}
+
+.projects-card-body {
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.projects-card-body h5 {
+    text-align: center;
+    margin-top: -10%;
+}
+
+.projects-card-body p {
+    text-align: right;
+}
+
+/* General Styling */
+.socials ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li {
+    position: relative;
+    width: 70px;
+    height: 82px; /* Height for the hexagon */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: linear-gradient(135deg, #e0e0e0, #f8f8f8);
+    /* background:linear-gradient(135deg, #9fc7d8, #203a43, #2c5364); ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.socials li:hover {
+    transform: scale(1.1);
+    /* background: linear-gradient(135deg, #d1d1d1, #e1e1e1); */
+    background:linear-gradient(135deg, #9fc7d8, #203a43, #2c5364); ;
+
+}
+
+.socials li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.socials li i {
+    font-size: 30px;
+    color: #333; /* Default icon color */
+    transition: color 0.3s;
+}
+
+.socials li:hover i {
+    color: #007bff; /* Change color on hover */
+}

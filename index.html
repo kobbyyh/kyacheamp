@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwabena Yirenkyi Acheampong | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/kayfav.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./images/acheamp.png" style="height: 20px;" alt="Acheampong"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- <i id="theme-icon" class="nav-link bi-brightness-high-fill theme-toggle"></i> -->
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar ms-auto">
+                    <a class="nav-link" style="padding: 5px; border-radius: 9px; background-color: red;"
+                        href="">Contact</a>
+                </ul>
+            </div> -->
+        </div>
+    </nav>
+
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="images/vid.mp4" type="video/mp4">
+        </video>
+        <div class="overlay-content text-white text-center">
+            <div class="container">
+                <h1 style="color: bisque; ">Hi, discover greatness!</h1><br><br><br>
+                <i id="reveal-button" class="icon bi bi-arrow-down-circle-fill"
+                    style="font-size: 5rem; cursor: pointer; color: bisque;">
+                </i>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <header id="hidden-content" class="hero-section text-white text-center d-flex align-items-center bg-dark">
+            <div class="container">
+                <h1 id="heroname"> Kwabena Yirenkyi Acheampong</h1>
+                <!-- <section id="hero">
+                    <div class="content">
+                        <h1>Elon Musk</h1>
+                        <p>Visionary Entrepreneur | Innovator | Space Pioneer</p>
+                        <a href="#projects" class="btn primary-btn">Explore My Work</a>
+                    </div>
+                </section>
+                <style>
+                    #hero {
+                        height: 100vh;
+                        background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                    }
+
+                    #hero h1 {
+                        font-family: 'Orbitron', sans-serif;
+                        font-size: 4rem;
+                        color: #f39c12;
+                    }
+                </style> -->
+                <p class="lead">Web Developer | Graphic Designer | Problem Solver</p>
+                <!-- <a href="#projects" class="btn btn-primary mt-3">View My Work</a> -->
+                <span class="btn btn-primary mt-3">Stay in touch<i class="bi bi-arrow-down-circle"
+                        style="font-size: 15px;margin-left: 10px;"></i></span>
+
+
+                <div class="socials" id="socials" style="padding-top: 20px;">
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li><a href="https://www.instagram.com/_kobbyyh/"><i class="bi bi-instagram"
+                                    style="font-size: 30px; color: rgb(167, 101, 13);"></i></a></li>
+                        <li><a href="https://twitter.com/kobbyyh"><i class="bi bi-twitter"
+                                    style="font-size: 30px; color: black;"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/kwabena-yirenkyi-acheampong-ba284a232/"><i
+                                    class="bi bi-linkedin" style="font-size: 30px; color: rgb(15, 78, 115);"></i></a>
+                        </li>
+                        <li><a href="https://github.com/kobbyyh"><i class="bi bi-github"
+                                    style="font-size: 30px; color: black"></i></a></li>
+                        <li><a href="https://youtube.com/@kayywrld_?si=Bk911NL4oDUlZCjo"><i class="bi bi-youtube"
+                                    style="font-size: 30px; color: red;"></i></a></li>
+                        <li><a href="mailto:kwabenaacheampong812@gmailcom"><i class="bi bi-envelope"
+                                    style="font-size: 30px; color: rgb(138, 16, 179);"></i></a></li>
+                        <li><a href="#"><i class="bi bi-mortarboard-fill"
+                                    style="font-size: 30px; color: rgb(7, 3, 116);"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="./images/profile.jpg" style="width: 50%; border-radius: 150%;" alt="Profile Image"
+                            class="img-fluid " />
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Who am I?</h2>
+                        <p style="font-family:cursive"> A passionate web developer and graphic designer with a strong
+                            focus on creating clean, modern, and responsive designs. I love solving
+                            problems through technology and building projects that make an impact.
+                            I am eagerly seeking opportunities to learn and grow as a person in the software development
+                            field.
+                            <br>I would humbly appreciate any offer and chance to work and collaborate on any project
+                            you
+                            have in mind.
+                            <br>
+                            <span style="font-family:cursive"> Let's connect!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="projects" class="bg-light py-5"> -->
+        <!-- <section id="projects" class=" py-5">
+            <div class="container text-center">
+                <h1>Projects</h1>
+                <hr style="margin-right: 40%; margin-left: 40%; ">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card" >
+                            <img src="images/kayycares.png" class="card-img-top" alt="Project 1" />
+                            <div class="card-body"style="height: 20%;">
+                                <h5 class="card-title">KayyCares</h5>
+                                <p class="card-text">A simple website that targets the health care of the elderly. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/kayyconv.jpg" class="card-img-top" alt="Project 2" />
+                            <div class="card-body">
+                                <h5 class="card-title">Unit Converter</h5>
+                                <p class="card-text">A simple unit converter developed using the basic frontend technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/agro.png" class="card-img-top" alt="Project 3" />
+                            <div class="card-body">
+                                <h5 class="card-title">Agro G</h5>
+                                <p class="card-text">A website that allows farmers to get updates on weather conditions and other related information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+
+
+        <!--  -->
+        <div class="skills_section" id="skills">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+
+                <div class="col-md-4 mb-4">
+                    <div class="skillscard card h-100 w-90 position-relative">
+                        <img src="./images/frontend.png" class="card-img-top overlapping-img" alt="Frontend">
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Frontend</h5>
+                            <div class="row">
+                                <div class="col-md-12 mb-4">
+                                    <div class="skill d-flex align-items-center">
+                                        <img src="images/htmlcss.png" alt="HTML5" class="skill-logo">
+                                        <span class="skill-name ms-3">HTML5 & CSS3</span> <br>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="skill d-flex align-items-center">
+                                        <img src="images/javascript.png" alt="JavaScript" class="skill-logo">
+                                        <span class="skill-name ms-3">JavaScript</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="skill d-flex align-items-center">
+                                        <img src="images/react.png" alt="React" class="skill-logo">
+                                        <span class="skill-name ms-3">React</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="skill d-flex align-items-center">
+                                        <img src="images/vue.png" alt="Vue" class="skill-logo">
+                                        <span class="skill-name ms-3">Vue</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 mb-4">
+                    <div class="skillscard card h-100 w-90 position-relative">
+                        <img src="./images/backend.png" class="card-img-top overlapping-img" alt="Frontend">
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Backend & Databases</h5>
+                            <div class="row">
+
+                                <div class="col-md-12 mb-4">
+                                    <div class="skill d-flex align-items-center">
+                                        <img src="images/python.png" alt="Python" class="skill-logo">
+                                        <span class="skill-name ms-3">Python</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-4">
+                                    <div class="skill d-flex align-items-center">
+                                        <img src="images/php.png" alt="PHP" class="skill-logo">
+                                        <span class="skill-name ms-3">PHP</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-4">
+                                    <div class="skill d-flex align-items-center">
+                                        <img src="images/firebase.png" alt="Firebase" class="skill-logo">
+                                        <span class="skill-name ms-3">Firebase</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-4">
+                                    <div class="skill d-flex align-items-center">
+                                        <img src="images/mysql.png" alt="MySQL" class="skill-logo">
+                                        <span class="skill-name ms-3">MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-4 mb-4">
+                    <div class="skillscard card h-100 w-90 position-relative">
+                        <img src="./images/UIUX.png" class="card-img-top overlapping-img" alt="Frontend">
+                        <div class="card-body text-start">
+                            <h5 class="card-title">UI/UX Design & Graphics</h5>
+                            <div class="row">
+
+                                <div class="col-md-12 mb-4">
+                                    <div class="skill d-flex align-items-center">
+                                        <img src="images/figma.png" alt="figma" class="skill-logo">
+                                        <span class="skill-name ms-3">Figma</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-4">
+                                    <div class="skill d-flex align-items-center">
+                                        <img src="images/canva.png" alt="canva" class="skill-logo">
+                                        <span class="skill-name ms-3">Canva</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-4">
+                                    <div class="skill d-flex align-items-center">
+                                        <img src="images/filmora.png" alt="filmora" class="skill-logo">
+                                        <span class="skill-name ms-3">Filmora</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-4">
+                                    <div class="skill d-flex align-items-center">
+                                        <img src="images/illustrator.png" alt="illustrator" class="skill-logo">
+                                        <span class="skill-name ms-3">Adobe Illustrator</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- <div class="container" id="projects">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="./images/agro.png" alt="Agro G">
+                    <h3>Agro G</h3>
+                    <p>A website that allows farmers to get updates on weather
+                        conditions and other related information</p>
+                    <p class="card-text"><a href="https://kobbyyh.github.io/Agro-G/index.html"> View <i
+                                class="bi bi-box-arrow-up-right" style="font-size: 20px ;"></i></a></p>
+
+                </div>
+                <div class="project-card">
+                    <img src="./images/kayycares.png" alt="KayyCares">
+                    <h3>KayyCares</h3>
+                    <p>A simple website that targets the health care of the
+                        elderly.</p>
+                    <p class="card-text"><a href="https://kayycares.netlify.app/"> View <i
+                                class="bi bi-box-arrow-up-right" style="font-size: 20px ;"></i></a></p>
+                </div>
+                <div class="project-card">
+                    <img src="./images/vyc.png" alt="VYC">
+                    <h3>VYC International</h3>
+                    <p>A simple website created for religious purposes.
+                    </p>
+                    <p class="card-text"><a href="https://vycinternational.vercel.app/"> View <i
+                                class="bi bi-box-arrow-up-right" style="font-size: 20px ;"></i></a></p>
+                </div>
+                <div class="project-card">
+                    <img src="./images/kayyconv.jpg" alt="KayyConv">
+                    <h3>U-Conv</h3>
+                    <p> A simple unit converter developed to solve the
+                        conversion of the basic units.
+                    </p>
+                    <p class="card-text"><a href="https://kayyconverter.netlify.app/"> View <i
+                                class="bi bi-box-arrow-up-right" style="font-size: 20px;"></i></a></p>
+                </div>
+            </div>
+        </div> -->
+
+        <div id="project" class="projects">
+            <div class="projects-second">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col md-3 mb-3">
+                        <div class="card h-100 w-90">
+                            <img src="./images/agro.png" class="card-img-top" alt="...">
+                            <div class="card-body projects-card-body">
+                                <h5 class="card-title projects-card-title align-items-right">Agro-G</h5>
+                                <span>A web application for horticulture. AgroG was designed to modernize horticulture
+                                    management, and it provides
+                                    growers with a centralized platform to access complete resources, optimize crop
+                                    selection
+                                    and cultivation techniques, and receive real-time weather insights and seasonal
+                                    planting
+                                    guidance</span>
+                                <p class="card-text align-items-right">
+                                    <a href="https://kobbyyh.github.io/Agro-G/index.html"
+                                        style="text-decoration: none;"><i class="bi bi-box-arrow-up-right"
+                                            style="font-size: 20px;"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col md-3 mb-3">
+                        <div class="card h-100 w-90">
+                            <img src="./images/vyc.png" class="card-img-top" alt="...">
+                            <div class="card-body projects-card-body">
+                                <h5 class="card-title projects-card-title align-items-right">VYC International</h5>
+                                <span>A simple church website designed to showcase various events and happenings in the
+                                    church</span>
+                                <p class="card-text align-items-right">
+                                    <a href="https://vycinternational.vercel.app/" style="text-decoration: none;"><i
+                                            class="bi bi-box-arrow-up-right" style="font-size: 20px;"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col md-3 mb-3">
+                        <div class="card h-100 w-90">
+                            <img src="./images/kayycares.png" class="card-img-top" alt="...">
+                            <div class="card-body projects-card-body">
+                                <h5 class="card-title projects-card-title align-items-right">Kayycares</h5>
+                                <span> A user-friendly website tailored to the unique needs and interests of older
+                                    adults, providing
+                                    a comprehensive resource for maintaining a healthy and fulfilling lifestyle.</span>
+                                <p class="card-text align-items-right">
+                                    <a href="https://kayycares.netlify.app/" style="text-decoration: none;"><i
+                                            class="bi bi-box-arrow-up-right" style="font-size: 20px;"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col md-3 mb-3">
+                        <div class="card h-100 w-90">
+                            <img src="./images/kayyconv.png" class="card-img-top" alt="...">
+                            <div class="card-body projects-card-body">
+                                <h5 class="card-title projects-card-title align-items-right">Kayyconv</h5>
+                                <span>An easily accessible unit converter web application that helps users make basic
+                                    conversions
+                                    of units</span>
+                                <p class="card-text align-items-right">
+                                    <a href="https://kobbyyh.github.io/kay-converter/" style="text-decoration: none;"><i
+                                            class="bi bi-box-arrow-up-right" style="font-size: 20px;"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+            </div>
+
+        </div>
+
+
+        <!-- </section> -->
+        <!-- <section id="skills" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">My Skills</h2>
+                <div class="row">
+
+                    <div class="col-md-4 mb-4">
+                        <div class="skill d-flex align-items-center">
+                            <img src="images/html5.png" alt="HTML5" class="skill-logo">
+                            <span class="skill-name ms-3">HTML5</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="skill d-flex align-items-center">
+                            <img src="images/css1 (2).png" alt="CSS3" class="skill-logo">
+                            <span class="skill-name ms-3">CSS3</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="skill d-flex align-items-center">
+                            <img src="images/javascript.png" alt="JavaScript" class="skill-logo">
+                            <span class="skill-name ms-3">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="skill d-flex align-items-center">
+                            <img src="images/react.png" alt="JavaScript" class="skill-logo">
+                            <span class="skill-name ms-3">React</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="skill d-flex align-items-center">
+                            <img src="images/php.png" alt="JavaScript" class="skill-logo">
+                            <span class="skill-name ms-3">PHP</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="skill d-flex align-items-center">
+                            <img src="images/python.png" alt="JavaScript" class="skill-logo">
+                            <span class="skill-name ms-3">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="skill d-flex align-items-center">
+                            <img src="images/figma.png" alt="JavaScript" class="skill-logo">
+                            <span class="skill-name ms-3">Figma</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="skill d-flex align-items-center">
+                            <img src="images/canva.png" alt="JavaScript" class="skill-logo">
+                            <span class="skill-name ms-3">Canva</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="skill d-flex align-items-center">
+                            <img src="images/mysql.png" alt="JavaScript" class="skill-logo">
+                            <span class="skill-name ms-3">MySQL</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="skill d-flex align-items-center">
+                            <img src="images/java.png" alt="JavaScript" class="skill-logo">
+                            <span class="skill-name ms-3">Java</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="skill d-flex align-items-center">
+                            <img src="images/premiere pro.png" alt="JavaScript" class="skill-logo">
+                            <span class="skill-name ms-3">Premiere Pro</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="skill d-flex align-items-center">
+                            <img src="images/premiere pro.png" alt="JavaScript" class="skill-logo">
+                            <span class="skill-name ms-3">Premiere Pro</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+
+
+        <footer id="contact" class="bg-dark py-5">
+            <div class="container text-center">
+                <h2>Contact Me</h2>
+                <p>...have a project or freelancing job in mind? Let's connect!</p>
+            </div>
+
+            <div class="socials" id="socials" style="padding-top: 20px;">
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li><a href="https://www.instagram.com/_kobbyyh/"><i class="bi bi-instagram"
+                                style="font-size: 30px; color: rgb(167, 101, 13);"></i></a></li>
+                    <li><a href="https://twitter.com/kobbyyh"><i class="bi bi-twitter"
+                                style="font-size: 30px; color: black;"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kwabena-yirenkyi-acheampong-ba284a232/"><i
+                                class="bi bi-linkedin" style="font-size: 30px; color: rgb(15, 78, 115);"></i></a>
+                    </li>
+                    <li><a href="https://github.com/kobbyyh"><i class="bi bi-github"
+                                style="font-size: 30px; color: black"></i></a></li>
+                    <li><a href="https://youtube.com/@kayywrld_?si=Bk911NL4oDUlZCjo"><i class="bi bi-youtube"
+                                style="font-size: 30px; color: red;"></i></a></li>
+                    <li><a href="mailto:kwabenaacheampong812@gmailcom"><i class="bi bi-envelope"
+                                style="font-size: 30px; color: rgb(138, 16, 179);"></i></a></li>
+                    <li><a href="#"><i class="bi bi-mortarboard-fill"
+                                style="font-size: 30px; color: rgb(7, 3, 116);"></i></a></li>
+                </ul>
+            </div>
+
+        </footer>
+
+        <div class="bg-dark text-white text-center py-5">
+            <hr>
+            <p>KAYY &copy; Developed by <a class="navbar-brand" href="https://kyacheamp.netlify.app/"
+                    style="color:bisque;">
+                    <i class="bi bi-person-circle" style="font-size: 20px; color: #b95050;"></i>
+                    Acheampong
+                </a> </p>
+            <img src="./images/acheamp.png" alt="">
+
+            <!-- <p> KAY &copy; Developed By <i class="bi bi-person-circle" style="font-size: 20px; color: #b95050;"></i> Kwabena Acheampong</p> -->
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <!--  -------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- Hero Section -->
+    <!-- <style>
+    /* Hero Section */
+    #heroe {
+        height: 100vh;
+        background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+
+    #heroe p {
+        font-size: 1.5rem;
+        margin: 20px 0;
+    }
+
+    #heroe .btn {
+        background-color: #f39c12;
+        color: #fff;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1rem;
+    }
+
+    #heroe .btn:hover {
+        background-color: #d35400;
+    }
+</style> -->
+
+
+
+
+
+    <!-- <section id="heroe">
+    <div class="content">
+        <h1>Elon Musk</h1>
+        <p>Visionary Entrepreneur | Innovator | Space Pioneer</p>
+        <a href="#projects12" class="btn primary-btn">Explore My Work</a>
+    </div>
+</section> -->
+
+
+    <!-- 2nd Hero Section -->
+    <!-- <style>
+    #heroo {
+        background: linear-gradient(45deg, #34495e, #2c3e50);
+        color: #fff;
+        padding: 100px 0;
+    }
+
+    #heroo h1 {
+        font-size: 3.5rem;
+    }
+
+    #heroo .btn {
+        margin-top: 20px;
+    }
+
+    /* Dark Mode Styles */
+    body.dark-mode {
+        background-color: #181818;
+        color: #fff;
+    }
+
+    body.dark-mode header {
+        background-color: #222;
+    }
+
+    body.dark-mode #hero {
+        background: linear-gradient(45deg, #1c1c1c, #333);
+    }
+
+    body.dark-mode #skills {
+        background-color: #2c3e50;
+    }
+
+    body.dark-mode #contact {
+        background-color: #222;
+    }
+
+    body.dark-mode .btn {
+        background-color: #f39c12;
+    }
+</style>
+<section id="heroo" class="text-center text-light">
+    <div class="container py-5">
+        <h1 class="display-4">Hi, I'm Kwabena Yirenkyi Acheampong</h1>
+        <p class="lead">A passionate Software Engineer | Full Stack Developer | Innovator</p>
+        <a href="#contact12" class="btn btn-primary btn-lg">Get in Touch</a>
+    </div>
+</section> -->
+
+
+    <!-- <script>
+    // javascript for 2nd hero 
+    // toggle between buttons
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    // const body = document.body;
+
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        darkModeToggle.textContent = body.classList.contains('dark-mode') ? '🌞' : '🌙';
+    });
+</script> -->
+
+    <!-- --------------------------------------------------------------------------------------- -->
+    <script>
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/62b42aa97b967b11799617ef/1g67sda0r';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+
+    </script>
+
+</body>
+
+</html>
