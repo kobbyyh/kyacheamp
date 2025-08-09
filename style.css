@@ -144,9 +144,9 @@ section {
     transition: transform 0.3s ease;
 }
 
-.skill:hover {
+/* .skill:hover {
     transform: translateY(-5px);
-}
+} */
 
 .skill-logo {
     width: 50px;
@@ -218,7 +218,7 @@ section {
 
 
 .skill-name {
-    cursor: pointer;
+    /* cursor:auto; */
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2rem;
     /* font-weight: 600; */
@@ -293,11 +293,11 @@ section {
 
 .project-card a{
     text-decoration: none;
-    color: white;
+    /* color: white; */
 }
 .project-card a:hover{
     text-decoration: none;
-    color: rgb(10, 184, 232);
+    /* color: rgb(10, 184, 232); */
 }
 .project-card h3{
    padding-top: 50px;
@@ -323,6 +323,14 @@ section {
 
 .projects-card-body p {
     text-align: right;
+}
+
+
+/* Graphics section  */
+
+.carousel-inner {
+    border-radius: 10px;
+    
 }
 
 /* General Styling */
